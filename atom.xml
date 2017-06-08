@@ -133,7 +133,7 @@
     <link href="http://blog.todolist.win/2017/01/09/Hexo-%E5%AE%89%E8%A3%85%E7%AC%94%E8%AE%B0/"/>
     <id>http://blog.todolist.win/2017/01/09/Hexo-安装笔记/</id>
     <published>2017-01-09T06:32:33.000Z</published>
-    <updated>2017-06-08T11:44:21.000Z</updated>
+    <updated>2017-06-08T11:47:57.000Z</updated>
     
     <content type="html"><![CDATA[<div class="toc">
 
@@ -142,6 +142,7 @@
 <li><a href="#hexo-an-zhuang-bi-ji">Hexo 安装笔记</a><ul>
 <li><a href="#1-jian-yao-shuo-ming">1.简要说明</a></li>
 <li><a href="#2-hexo-chang-yong-ming-ling">2. Hexo常用命令</a></li>
+<li><a href="#ru-he-bu-shu-dao-github-shang">如何部署到GitHub上</a></li>
 </ul>
 </li>
 </ul>
@@ -241,6 +242,10 @@
 <p>清理缓存文件<code>(db.json)</code> 然后重新创建文件目录 <code>(public)</code>.</p>
 <h5 id="list"><a href="list" class="header-anchor">"#"</a><a href="#list" class="headerlink" title="list"></a>list</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo list &lt;type&gt;</div></pre></td></tr></table></figure>
 <p>列举网站(博客)信息List the information of the site.<br>type可选的值列表 : page, post, route, tag, category</p>
+<h4 id="ru-he-bu-shu-dao-github-shang"><a href="ru-he-bu-shu-dao-github-shang" class="header-anchor">"#"</a><a href="#如何部署到GitHub上" class="headerlink" title="如何部署到GitHub上"></a>如何部署到GitHub上</h4><p>关于如何开启GitHub的Pages服务,网上的资料太多,而且大同小异, 这里就不在重复.</p>
+<blockquote>
+<p>编辑完文章后 使用 <code>hexo d -g</code> 即可部署到GitHub上</p>
+</blockquote>
 <p>未完待续……</p>
 <hr>
 <p>参考引用:   </p>
