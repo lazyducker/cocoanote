@@ -133,7 +133,7 @@
     <link href="http://blog.todolist.win/2017/01/09/Hexo-%E5%AE%89%E8%A3%85%E7%AC%94%E8%AE%B0/"/>
     <id>http://blog.todolist.win/2017/01/09/Hexo-安装笔记/</id>
     <published>2017-01-09T06:32:33.000Z</published>
-    <updated>2017-01-10T01:55:56.000Z</updated>
+    <updated>2017-06-08T11:44:21.000Z</updated>
     
     <content type="html"><![CDATA[<div class="toc">
 
@@ -241,6 +241,14 @@
 <p>清理缓存文件<code>(db.json)</code> 然后重新创建文件目录 <code>(public)</code>.</p>
 <h5 id="list"><a href="list" class="header-anchor">"#"</a><a href="#list" class="headerlink" title="list"></a>list</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo list &lt;type&gt;</div></pre></td></tr></table></figure>
 <p>列举网站(博客)信息List the information of the site.<br>type可选的值列表 : page, post, route, tag, category</p>
+<p>未完待续……</p>
+<hr>
+<p>参考引用:   </p>
+<ul>
+<li><a href="http://blog.csdn.net/jzooo/article/details/46781805" target="_blank" rel="external">http://blog.csdn.net/jzooo/article/details/46781805</a>  </li>
+<li><a href="http://baixin.io/2016/06/HEXO_Advanced/" target="_blank" rel="external">http://baixin.io/2016/06/HEXO_Advanced/</a>  </li>
+<li><a href="http://www.jianshu.com/p/465830080ea9" target="_blank" rel="external">http://www.jianshu.com/p/465830080ea9</a></li>
+</ul>
 ]]></content>
     
     <summary type="html">
