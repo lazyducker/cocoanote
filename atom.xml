@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.todolist.win/"/>
-  <updated>2017-06-10T15:18:52.000Z</updated>
+  <updated>2017-06-10T15:20:14.000Z</updated>
   <id>http://blog.todolist.win/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://blog.todolist.win/2017/06/10/20170610-note-architecture/"/>
     <id>http://blog.todolist.win/2017/06/10/20170610-note-architecture/</id>
     <published>2017-06-10T14:58:39.000Z</published>
-    <updated>2017-06-10T15:18:52.000Z</updated>
+    <updated>2017-06-10T15:20:14.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="guan-yu-jia-gou-zhuan"><a href="guan-yu-jia-gou-zhuan" class="header-anchor">"#"</a><a href="#关于架构-转" class="headerlink" title="关于架构[转]"></a>关于架构[转]</h3><hr>
 <h4 id="jia-gou-de-ding-yi-yu-li-jie"><a href="jia-gou-de-ding-yi-yu-li-jie" class="header-anchor">"#"</a><a href="#架构的定义与理解" class="headerlink" title="架构的定义与理解"></a>架构的定义与理解</h4><p>一. 架构系统前, 架构师的首要任务是 尽最快可能找到利益相关者: <code>业务方</code>, <code>产品经理</code>, <code>客户/用户</code>, <code>开发经理</code>, <code>工程师</code>, <code>项目经理</code>,  <code>测试人员</code> , <code>运维人员</code> ,<code>产品运营人员</code> 等等都可能是利益相关者, 架构师要充分和利益相关者沟通, 深入了解他们的关注点和痛点, 并找出并构架出这些关注点的解决方案.</p>
@@ -69,7 +69,7 @@
     
     <summary type="html">
     
-      架构师的首要任务是 尽最快可能找到利益相关者: 业务方, 产品经理, 客户/用户, 开发经理, 工程师, 项目经理, 测试人员 , 运维人员 ,产品运营人员 等等都可能是利益相关者, 架构师要充分和利益相关者沟通, 深入了解他们的关注点和痛点, 并找出并构架出这些关注点的解决方案. 
+      &lt;h3 id=&quot;guan-yu-jia-gou-zhuan&quot;&gt;&lt;a href=&quot;guan-yu-jia-gou-zhuan&quot; class=&quot;header-anchor&quot;&gt;&quot;#&quot;&lt;/a&gt;&lt;a href=&quot;#关于架构-转&quot; class=&quot;headerlink&quot; title=&quot;关于架构
     
     </summary>
     
