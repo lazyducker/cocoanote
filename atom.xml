@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.todolist.win/"/>
-  <updated>2017-06-10T15:20:14.000Z</updated>
+  <updated>2017-06-11T09:02:10.000Z</updated>
   <id>http://blog.todolist.win/</id>
   
   <author>
@@ -20,9 +20,10 @@
     <link href="http://blog.todolist.win/2017/06/10/20170610-note-architecture/"/>
     <id>http://blog.todolist.win/2017/06/10/20170610-note-architecture/</id>
     <published>2017-06-10T14:58:39.000Z</published>
-    <updated>2017-06-10T15:20:14.000Z</updated>
+    <updated>2017-06-11T09:02:10.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="guan-yu-jia-gou-zhuan"><a href="guan-yu-jia-gou-zhuan" class="header-anchor">"#"</a><a href="#关于架构-转" class="headerlink" title="关于架构[转]"></a>关于架构[转]</h3><hr>
+<p><a href="http://www.infoq.com/cn/articles/every-architect-should-study-conway-law/" target="_blank" rel="external">原文地址</a> </p>
 <h4 id="jia-gou-de-ding-yi-yu-li-jie"><a href="jia-gou-de-ding-yi-yu-li-jie" class="header-anchor">"#"</a><a href="#架构的定义与理解" class="headerlink" title="架构的定义与理解"></a>架构的定义与理解</h4><p>一. 架构系统前, 架构师的首要任务是 尽最快可能找到利益相关者: <code>业务方</code>, <code>产品经理</code>, <code>客户/用户</code>, <code>开发经理</code>, <code>工程师</code>, <code>项目经理</code>,  <code>测试人员</code> , <code>运维人员</code> ,<code>产品运营人员</code> 等等都可能是利益相关者, 架构师要充分和利益相关者沟通, 深入了解他们的关注点和痛点, 并找出并构架出这些关注点的解决方案.</p>
 <p>二. 利益相关者的关注点是有可能冲突的, 比如: </p>
 <blockquote>
@@ -48,9 +49,9 @@
 </ol>
 </blockquote>
 <p>四. 架构的目的用于管理复杂性、易变性和不确定性， 确保长期演变的架构部分的变化不会对架构的其他部分产生不必要的负面影响. 这样可以确保业务和开发的敏捷， 让应用的易变部分能够频繁的变化而不影响（或者影响更少）应用其他部分  </p>
-<p>五. 国内企业IT的现状是：无数高耦合的遗留系统，不良的架构设计导致限制了企业的业务，升级替换的成本巨大，所以此时架构的关注点由性能、高可用转变为更加关注可维护性、可扩展性、成本。 所以企业创业之初选择好的架构师或技术负责人非常重要. </p>
-<h4 id="jia-gou-de-die-dai-he-yan-hua-xing"><a href="jia-gou-de-die-dai-he-yan-hua-xing" class="header-anchor">"#"</a><a href="#架构的迭代和演化性" class="headerlink" title="架构的迭代和演化性"></a>架构的迭代和演化性</h4><p>一. RUP的三个特点</p>
-<blockquote>
+<p>五. 国内企业IT的现状是：无数高耦合的遗留系统，不良的架构设计导致限制了企业的业务，升级替换的成本巨大，<u>所以此时架构的关注点由性能、高可用转变为更加关注可维护性、可扩展性、成本</u>。 所以企业创业之初选择好的架构师或技术负责人非常重要. </p>
+<a id="more"></a> 
+<h4 id="jia-gou-de-die-dai-he-yan-hua-xing"><a href="jia-gou-de-die-dai-he-yan-hua-xing" class="header-anchor">"#"</a><a href="#架构的迭代和演化性" class="headerlink" title="架构的迭代和演化性"></a>架构的迭代和演化性</h4><h5 id="yi-rup-de-san-ge-te-dian"><a href="yi-rup-de-san-ge-te-dian" class="header-anchor">"#"</a><a href="#一-RUP的三个特点" class="headerlink" title="一. RUP的三个特点"></a>一. RUP的三个特点</h5><blockquote>
 <ol>
 <li>用例和风险驱动(use case and risk driven)</li>
 <li>架构中心(Architecture centric)</li>
@@ -59,8 +60,18 @@
 </blockquote>
 <p>RUP提倡以架构和风险驱动, 项目一开始要做到 端到端的原型(prototype) ； 通过压力测试验证框架的可行性 ，在原型的基础上进行持续迭代和增量开发， 开发-&gt;测试-&gt;调整架构-&gt;开发</p>
 <p><img src="/2017/06/10/20170610-note-architecture/114.jpg" alt=""></p>
-<p>从上面的图可以看出：架构是一个不断演进和迭代的过程 而不是一蹴而就，一来就求大而全（架构师的完美主义不一定是好事），所以架构师要尽量写代码，做测试，否则纸上谈兵然后丢给开发团队是很不负责任的做法，容易造成产品不能满足最终用户需求(下图就说明了这个问题):</p>
+<p>从上面的图可以看出：<code>架构是一个不断演进和迭代的过程</code> 而不是一蹴而就 ，一来就求大而全（架构师的完美主义不一定是好事），所以架构师要尽量写代码，做测试，否则纸上谈兵然后丢给开发团队是很不负责任的做法，容易造成产品不能满足最终用户需求。</p>
+<h5 id="er-zui-xiao-ke-yong-chan-pin"><a href="er-zui-xiao-ke-yong-chan-pin" class="header-anchor">"#"</a><a href="#二-最小可用产品" class="headerlink" title="二. 最小可用产品"></a>二. 最小可用产品</h5><p>最小可用产品（Minimum Viable Product， MVP）理念, 即迅速做出最小可用的产品，丢给客户试用，快速获取用户反馈，在此基础上不断进行产品架构的迭代和演化升级: </p>
 <p><img src="/2017/06/10/20170610-note-architecture/115.jpg" alt=""></p>
+<p>如上图就是描述了架构师应该迅速做出最小可用产品，从而使得用户尽快试用产品并在此基础上快速更新升级，否则做出最终的产品无法满足客户需求而导致了成本和风险的提高。</p>
+<p><img src="/2017/06/10/20170610-note-architecture/116.jpg" alt=""></p>
+<p>上图反应了过度工程(Over Engineering)的问题, 其实就是产品架构和用户之间没有形成有效的反馈闭环</p>
+<blockquote class="blockquote-center"><br><br><strong> 注意 </strong> ，在系统真正地投入生产使用之前，再好的架构都只是假设，产品越晚被使用者使用，失败的成本和风险就越高，而小步行进，通过 <strong><strong> MVP </strong></strong> 快速实验，获取客户反馈，迭代演化产品，能有效地减少失败的成本和风险。<br><br></blockquote>
+
+
+
+
+
 <h5 id="can-kao-zi-liao"><a href="can-kao-zi-liao" class="header-anchor">"#"</a><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h5><ul>
 <li><a href="http://itrevolution.com/the-three-ways-principles-underpinning-devops/" target="_blank" rel="external">THE THREE WAYS: THE PRINCIPLES UNDERPINNING DEVOPS</a></li>
 <li><a href="http://baike.baidu.com/link?url=PcIm9RTOWnAd0rqN7f5rrlbt9QmjWgPctJ5i4K5ObjPqD7KtOMIQRBiUVMZ5YpuQ_uymtAdsT-n-0hB4sCVyNK" target="_blank" rel="external">统一软件开发过程</a></li>
@@ -69,7 +80,34 @@
     
     <summary type="html">
     
-      &lt;h3 id=&quot;guan-yu-jia-gou-zhuan&quot;&gt;&lt;a href=&quot;guan-yu-jia-gou-zhuan&quot; class=&quot;header-anchor&quot;&gt;&quot;#&quot;&lt;/a&gt;&lt;a href=&quot;#关于架构-转&quot; class=&quot;headerlink&quot; title=&quot;关于架构
+      &lt;h3 id=&quot;关于架构-转&quot;&gt;&lt;a href=&quot;#关于架构-转&quot; class=&quot;headerlink&quot; title=&quot;关于架构[转]&quot;&gt;&lt;/a&gt;关于架构[转]&lt;/h3&gt;&lt;hr&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.infoq.com/cn/articles/every-architect-should-study-conway-law/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;原文地址&lt;/a&gt; &lt;/p&gt;
+&lt;h4 id=&quot;架构的定义与理解&quot;&gt;&lt;a href=&quot;#架构的定义与理解&quot; class=&quot;headerlink&quot; title=&quot;架构的定义与理解&quot;&gt;&lt;/a&gt;架构的定义与理解&lt;/h4&gt;&lt;p&gt;一. 架构系统前, 架构师的首要任务是 尽最快可能找到利益相关者: &lt;code&gt;业务方&lt;/code&gt;, &lt;code&gt;产品经理&lt;/code&gt;, &lt;code&gt;客户/用户&lt;/code&gt;, &lt;code&gt;开发经理&lt;/code&gt;, &lt;code&gt;工程师&lt;/code&gt;, &lt;code&gt;项目经理&lt;/code&gt;,  &lt;code&gt;测试人员&lt;/code&gt; , &lt;code&gt;运维人员&lt;/code&gt; ,&lt;code&gt;产品运营人员&lt;/code&gt; 等等都可能是利益相关者, 架构师要充分和利益相关者沟通, 深入了解他们的关注点和痛点, 并找出并构架出这些关注点的解决方案.&lt;/p&gt;
+&lt;p&gt;二. 利益相关者的关注点是有可能冲突的, 比如: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;管理者(可管理性) VS 技术方 (性能)&lt;/li&gt;
+&lt;li&gt;业务方(多快好省) VS 技术方(可靠稳定)   &lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;等等这些需要架构师去灵活的平衡, 如何平衡体现了架构师的水平&lt;/p&gt;
+&lt;p&gt;三. 架构主要关注非功能性需求 &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;易于分解(保持独立性)&lt;/li&gt;
+&lt;li&gt;易于理解&lt;/li&gt;
+&lt;li&gt;易于扩展&lt;/li&gt;
+&lt;li&gt;易于变更&lt;/li&gt;
+&lt;li&gt;易于替换&lt;/li&gt;
+&lt;li&gt;易于部署&lt;/li&gt;
+&lt;li&gt;易于伸缩(伸缩性)&lt;/li&gt;
+&lt;li&gt;易于恢复(还原能力)&lt;/li&gt;
+&lt;li&gt;易于连接(统一接口)&lt;/li&gt;
+&lt;li&gt;易于交付(成本&amp;amp;效率)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;四. 架构的目的用于管理复杂性、易变性和不确定性， 确保长期演变的架构部分的变化不会对架构的其他部分产生不必要的负面影响. 这样可以确保业务和开发的敏捷， 让应用的易变部分能够频繁的变化而不影响（或者影响更少）应用其他部分  &lt;/p&gt;
+&lt;p&gt;五. 国内企业IT的现状是：无数高耦合的遗留系统，不良的架构设计导致限制了企业的业务，升级替换的成本巨大，&lt;u&gt;所以此时架构的关注点由性能、高可用转变为更加关注可维护性、可扩展性、成本&lt;/u&gt;。 所以企业创业之初选择好的架构师或技术负责人非常重要. &lt;/p&gt;
     
     </summary>
     
