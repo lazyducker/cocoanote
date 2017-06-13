@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.todolist.win/"/>
-  <updated>2017-06-11T09:02:10.000Z</updated>
+  <updated>2017-06-11T17:40:21.000Z</updated>
   <id>http://blog.todolist.win/</id>
   
   <author>
@@ -16,11 +16,57 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>空-雨-伞</title>
+    <link href="http://blog.todolist.win/2017/06/11/20170611-note/"/>
+    <id>http://blog.todolist.win/2017/06/11/20170611-note/</id>
+    <published>2017-06-11T09:03:11.000Z</published>
+    <updated>2017-06-11T17:40:21.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近在整理以前工作中的笔记时，遇到个麻烦事儿，到不是笔记不全，而是根本看不下去，一团糟，而且没有终点，导致百白花了精力。<br>先看看我整理的一些问题：</p>
+<blockquote>
+<ol>
+<li>相同主题的笔记非常分散</li>
+<li>全篇无重点</li>
+<li>笔记当时没有精简提炼，导致再整理时已经忘记当时的内容</li>
+<li>没有适当的使用画图的方式加深理解</li>
+<li>页面太小，所有内容挤在一堆</li>
+</ol>
+</blockquote>
+<p>要不是这个问题困扰我许久，获取到现在还没有发现，原来之前的笔记就是个摆设，或者说我会继续这种乱糟糟的笔记方式……<br>于是抱着解决这个困扰我许久的问题想法，找了很多相关的笔记法，想以此为契机，整理一系列各种笔记法的文章，以此找到更适合自己的方式，每篇文章最后都会附上个人的实践结论，仅供参考……<br><a id="more"></a></p>
+<h3 id="shi-me-shi-kong-yu-san-bi-ji-fa"><a href="shi-me-shi-kong-yu-san-bi-ji-fa" class="header-anchor">"#"</a><a href="#什么是空-雨-伞笔记法" class="headerlink" title="什么是空-雨-伞笔记法"></a>什么是空-雨-伞笔记法</h3><p><img src="/2017/06/11/20170611-note/001.jpg" alt=""><br>“在麦肯锡，所有思考都需严格按照‘空•雨•伞’三步执行” —- 《从麦肯锡到企业家》一书作者</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近在整理以前工作中的笔记时，遇到个麻烦事儿，到不是笔记不全，而是根本看不下去，一团糟，而且没有终点，导致百白花了精力。&lt;br&gt;先看看我整理的一些问题：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;相同主题的笔记非常分散&lt;/li&gt;
+&lt;li&gt;全篇无重点&lt;/li&gt;
+&lt;li&gt;笔记当时没有精简提炼，导致再整理时已经忘记当时的内容&lt;/li&gt;
+&lt;li&gt;没有适当的使用画图的方式加深理解&lt;/li&gt;
+&lt;li&gt;页面太小，所有内容挤在一堆&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;要不是这个问题困扰我许久，获取到现在还没有发现，原来之前的笔记就是个摆设，或者说我会继续这种乱糟糟的笔记方式……&lt;br&gt;于是抱着解决这个困扰我许久的问题想法，找了很多相关的笔记法，想以此为契机，整理一系列各种笔记法的文章，以此找到更适合自己的方式，每篇文章最后都会附上个人的实践结论，仅供参考……&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Home" scheme="http://blog.todolist.win/categories/Home/"/>
+    
+      <category term="笔记法" scheme="http://blog.todolist.win/categories/Home/%E7%AC%94%E8%AE%B0%E6%B3%95/"/>
+    
+    
+      <category term="日记" scheme="http://blog.todolist.win/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>一些关于架构的</title>
     <link href="http://blog.todolist.win/2017/06/10/20170610-note-architecture/"/>
     <id>http://blog.todolist.win/2017/06/10/20170610-note-architecture/</id>
     <published>2017-06-10T14:58:39.000Z</published>
-    <updated>2017-06-11T09:02:10.000Z</updated>
+    <updated>2017-06-11T09:19:04.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="guan-yu-jia-gou-zhuan"><a href="guan-yu-jia-gou-zhuan" class="header-anchor">"#"</a><a href="#关于架构-转" class="headerlink" title="关于架构[转]"></a>关于架构[转]</h3><hr>
 <p><a href="http://www.infoq.com/cn/articles/every-architect-should-study-conway-law/" target="_blank" rel="external">原文地址</a> </p>
@@ -49,8 +95,7 @@
 </ol>
 </blockquote>
 <p>四. 架构的目的用于管理复杂性、易变性和不确定性， 确保长期演变的架构部分的变化不会对架构的其他部分产生不必要的负面影响. 这样可以确保业务和开发的敏捷， 让应用的易变部分能够频繁的变化而不影响（或者影响更少）应用其他部分  </p>
-<p>五. 国内企业IT的现状是：无数高耦合的遗留系统，不良的架构设计导致限制了企业的业务，升级替换的成本巨大，<u>所以此时架构的关注点由性能、高可用转变为更加关注可维护性、可扩展性、成本</u>。 所以企业创业之初选择好的架构师或技术负责人非常重要. </p>
-<a id="more"></a> 
+<p>五. 国内企业IT的现状是：无数高耦合的遗留系统，不良的架构设计导致限制了企业的业务，升级替换的成本巨大，<u>所以此时架构的关注点由性能、高可用转变为更加关注可维护性、可扩展性、成本</u>。 所以企业创业之初选择好的架构师或技术负责人非常重要.<br>……<br><a id="more"></a> </p>
 <h4 id="jia-gou-de-die-dai-he-yan-hua-xing"><a href="jia-gou-de-die-dai-he-yan-hua-xing" class="header-anchor">"#"</a><a href="#架构的迭代和演化性" class="headerlink" title="架构的迭代和演化性"></a>架构的迭代和演化性</h4><h5 id="yi-rup-de-san-ge-te-dian"><a href="yi-rup-de-san-ge-te-dian" class="header-anchor">"#"</a><a href="#一-RUP的三个特点" class="headerlink" title="一. RUP的三个特点"></a>一. RUP的三个特点</h5><blockquote>
 <ol>
 <li>用例和风险驱动(use case and risk driven)</li>
@@ -107,7 +152,7 @@
 &lt;/ol&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;四. 架构的目的用于管理复杂性、易变性和不确定性， 确保长期演变的架构部分的变化不会对架构的其他部分产生不必要的负面影响. 这样可以确保业务和开发的敏捷， 让应用的易变部分能够频繁的变化而不影响（或者影响更少）应用其他部分  &lt;/p&gt;
-&lt;p&gt;五. 国内企业IT的现状是：无数高耦合的遗留系统，不良的架构设计导致限制了企业的业务，升级替换的成本巨大，&lt;u&gt;所以此时架构的关注点由性能、高可用转变为更加关注可维护性、可扩展性、成本&lt;/u&gt;。 所以企业创业之初选择好的架构师或技术负责人非常重要. &lt;/p&gt;
+&lt;p&gt;五. 国内企业IT的现状是：无数高耦合的遗留系统，不良的架构设计导致限制了企业的业务，升级替换的成本巨大，&lt;u&gt;所以此时架构的关注点由性能、高可用转变为更加关注可维护性、可扩展性、成本&lt;/u&gt;。 所以企业创业之初选择好的架构师或技术负责人非常重要.&lt;br&gt;……&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
@@ -124,6 +169,62 @@
     <id>http://blog.todolist.win/2017/06/09/札记/</id>
     <published>2017-06-09T06:21:11.000Z</published>
     <updated>2017-06-09T06:21:11.000Z</updated>
+    
+    <summary type="html">
+    
+      一些札记
+    
+    </summary>
+    
+      <category term="Home" scheme="http://blog.todolist.win/categories/Home/"/>
+    
+    
+      <category term="日记" scheme="http://blog.todolist.win/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于Nginx的最简单的负载均衡</title>
+    <link href="http://blog.todolist.win/2017/06/09/nginx/"/>
+    <id>http://blog.todolist.win/2017/06/09/nginx/</id>
+    <published>2017-06-09T03:44:52.000Z</published>
+    <updated>2017-06-13T10:56:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="cha-kan-linux-shang-duan-kou-de-zhan-yong-qing-kuang"><a href="cha-kan-linux-shang-duan-kou-de-zhan-yong-qing-kuang" class="header-anchor">"#"</a><a href="#查看linux上端口的占用情况" class="headerlink" title="查看linux上端口的占用情况"></a>查看linux上端口的占用情况</h5><blockquote>
+<p>单机多端口应用做负载均衡部署时，选择tomcat配置不同端口</p>
+<p>使用lsof 命令配合-i参数，即可查看指定端口的占用情况<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[root@localhost webapps]# lsof -i:8082</div><div class="line">COMMAND   PID USER   FD   TYPE  DEVICE SIZE/OFF NODE NAME</div><div class="line">java    29756 root   50u  IPv6 6161829      0t0  TCP *:us-cli (LISTEN)</div></pre></td></tr></table></figure></p>
+</blockquote>
+<h5 id="ji-yu-openresty-de-nginx-zuo-fu-zai-jun-heng-pei-zhi"><a href="ji-yu-openresty-de-nginx-zuo-fu-zai-jun-heng-pei-zhi" class="header-anchor">"#"</a><a href="#基于Openresty的nginx做负载均衡配置" class="headerlink" title="基于Openresty的nginx做负载均衡配置"></a>基于Openresty的nginx做负载均衡配置</h5><p>说是基于Openresty，其实这里主要还是用nginx做负载,至于Openresty的使用，后面专题再讲  </p>
+<p>nginx要做下面几个配置:  </p>
+<ul>
+<li>upstream配置</li>
+<li>nginx.conf配置</li>
+</ul>
+<ol>
+<li>upstream配置如下:<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">upstream wxshop &#123;</div><div class="line">    ip_hash;</div><div class="line">    server 127.0.0.1:8089 weight=1 max_fails=3 fail_timeout=10s;</div><div class="line">    server 127.0.0.1:8082 weight=1 max_fails=3 fail_timeout=10s;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<blockquote>
+<p>关于upstream更详细的用法，参考另一篇博客 <a href="">Nginx模块之-upstream</a>  </p>
+</blockquote>
+<p>PS:<br>部分参数说明:  </p>
+<blockquote>
+<p><strong>ip_hash</strong> 用于通知nginx使用ip hash负载均衡算法,<br>如果没加这条指令，nginx会使用默认的round robin负载均衡模块<br><strong>weight</strong> 访问权重,默认1，值越大，权重越大<br><strong>max_fails</strong> 允许请求失败的次数默认为1.当超过最大次数时，返回proxy_next_upstream 模块定义的错误<br><strong>fail_timeout</strong> ==max_fails== 次失败后，暂停的时间<br><strong>down</strong> 表示单前的server暂时不参与负载<br><strong>backup</strong> 其它所有的非backup机器down或者忙的时候，请求backup机器。所以这台机器压力会最轻  </p>
+</blockquote>
+<ol>
+<li>nginx.conf配置如下  <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div></pre></td><td class="code"><pre><div class="line">location /shop &#123;</div><div class="line">                proxy_pass http://wxshop;</div><div class="line">                proxy_redirect off;</div><div class="line">                proxy_set_header Host $host;</div><div class="line">                proxy_set_header X-Forwarded-For $remote_addr;</div><div class="line">                #client_max_body_size 20m;</div><div class="line">                #client_body_buffer_size 128k;</div><div class="line">                #proxy_connect_timeout 600;</div><div class="line">                #proxy_send_timeout 600;</div><div class="line">                #proxy_read_timeout 900;</div><div class="line">                #proxy_buffer_size 4k;</div><div class="line">                #proxy_buffers 4 32k;</div><div class="line">                #proxy_busy_buffers_size 64k;</div><div class="line">                #proxy_temp_file_write_size 64k;</div><div class="line">        &#125;</div><div class="line">        location /shop2 &#123;</div><div class="line">                proxy_pass http://192.168.8.118:8089/shop;</div><div class="line">                proxy_redirect off;</div><div class="line">                proxy_set_header Host $host;</div><div class="line">                root html;</div><div class="line">                index index.html index.jsp index.htm;</div><div class="line"></div><div class="line">        &#125;</div><div class="line">        location /shop3/ &#123;</div><div class="line">                proxy_pass http://192.168.8.118:8082/shop;</div><div class="line">                proxy_redirect off;</div><div class="line">                proxy_set_header Host $host;</div><div class="line">                root html;</div><div class="line">                index index.html index.jsp index.htm;</div><div class="line">        &#125;</div><div class="line">        location /wxpay3 &#123;</div><div class="line">                proxy_pass http://192.168.8.118:8082/wxpay;</div><div class="line">                proxy_redirect off;</div><div class="line">                proxy_set_header Host $host;</div><div class="line">                root html;</div><div class="line">                index index.html index.jsp index.htm;</div><div class="line">        &#125;</div><div class="line">        location /wxpay &#123;</div><div class="line">                proxy_pass http://192.168.8.118:8089/wxpay;</div><div class="line">                proxy_redirect off;</div><div class="line">                proxy_set_header Host $host;</div><div class="line">                root html;</div><div class="line">                index index.html index.jsp index.htm;</div><div class="line">        &#125;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h5 id="session-gong-xiang"><a href="session-gong-xiang" class="header-anchor">"#"</a><a href="#session共享" class="headerlink" title="session共享"></a>session共享</h5><p>session共享问题是负载均衡部署很重要的问题，如果是一个用户的请求始终分配到其中一台服务器上，就不存在session共享的问题，如果是一个用户的请求可能被分配到多台服务器时，就存在session共享问题了，<br>我们的系统中主要是采用了spring redis的结合，将整个web端的会话存储到redis中，从而实现了session共享</p>
+<p>未完待续……</p>
+<h5 id="can-kao-wen-dang"><a href="can-kao-wen-dang" class="header-anchor">"#"</a><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h5><ul>
+<li><a href="http://tengine.taobao.org/book/chapter_05.html" target="_blank" rel="external">Nginx模块开发篇</a></li>
+<li><a href="http://debugo.com/nginx-web-upstream/" target="_blank" rel="external">Nginx基本服务与upstream配置详解</a>  </li>
+<li><a href="http://blog.csdn.net/andong154564667/article/details/52121765" target="_blank" rel="external">实现nginx的负载均衡</a></li>
+<li><a href="http://www.cnblogs.com/mecity/archive/2011/06/20/2085529.html" target="_blank" rel="external">Nginx的负载均衡的那点事</a></li>
+<li>[<a href="https://github.com/ewolff/microservice" target="_blank" rel="external">https://github.com/ewolff/microservice</a>]</li>
+</ul>
+]]></content>
     
     <summary type="html">
     

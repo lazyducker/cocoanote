@@ -86,21 +86,17 @@
 
 
 
-<meta name="description" content="关于架构[转] 原文地址  架构的定义与理解一. 架构系统前, 架构师的首要任务是 尽最快可能找到利益相关者: 业务方, 产品经理, 客户/用户, 开发经理, 工程师, 项目经理,  测试人员 , 运维人员 ,产品运营人员 等等都可能是利益相关者, 架构师要充分和利益相关者沟通, 深入了解他们的关注点和痛点, 并找出并构架出这些关注点的解决方案. 二. 利益相关者的关注点是有可能冲突的, 比如:">
+<meta name="description" content="一些札记">
 <meta name="keywords" content="日记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一些关于架构的">
-<meta property="og:url" content="http://blog.todolist.win/2017/06/10/20170610-note-architecture/index.html">
+<meta property="og:title" content="基于Nginx的最简单的负载均衡">
+<meta property="og:url" content="http://blog.todolist.win/2017/06/09/nginx/index.html">
 <meta property="og:site_name" content="2017 My Best Wishes">
-<meta property="og:description" content="关于架构[转] 原文地址  架构的定义与理解一. 架构系统前, 架构师的首要任务是 尽最快可能找到利益相关者: 业务方, 产品经理, 客户/用户, 开发经理, 工程师, 项目经理,  测试人员 , 运维人员 ,产品运营人员 等等都可能是利益相关者, 架构师要充分和利益相关者沟通, 深入了解他们的关注点和痛点, 并找出并构架出这些关注点的解决方案. 二. 利益相关者的关注点是有可能冲突的, 比如:">
-<meta property="og:image" content="http://blog.todolist.win/2017/06/10/20170610-note-architecture/114.jpg">
-<meta property="og:image" content="http://blog.todolist.win/2017/06/10/20170610-note-architecture/115.jpg">
-<meta property="og:image" content="http://blog.todolist.win/2017/06/10/20170610-note-architecture/116.jpg">
-<meta property="og:updated_time" content="2017-06-11T09:19:04.000Z">
+<meta property="og:description" content="一些札记">
+<meta property="og:updated_time" content="2017-06-13T10:56:18.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一些关于架构的">
-<meta name="twitter:description" content="关于架构[转] 原文地址  架构的定义与理解一. 架构系统前, 架构师的首要任务是 尽最快可能找到利益相关者: 业务方, 产品经理, 客户/用户, 开发经理, 工程师, 项目经理,  测试人员 , 运维人员 ,产品运营人员 等等都可能是利益相关者, 架构师要充分和利益相关者沟通, 深入了解他们的关注点和痛点, 并找出并构架出这些关注点的解决方案. 二. 利益相关者的关注点是有可能冲突的, 比如:">
-<meta name="twitter:image" content="http://blog.todolist.win/2017/06/10/20170610-note-architecture/114.jpg">
+<meta name="twitter:title" content="基于Nginx的最简单的负载均衡">
+<meta name="twitter:description" content="一些札记">
 
 
 
@@ -128,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.todolist.win/2017/06/10/20170610-note-architecture/"/>
+  <link rel="canonical" href="http://blog.todolist.win/2017/06/09/nginx/"/>
 
 
 
 
 
-  <title> 一些关于架构的 | 2017 My Best Wishes </title>
+  <title> 基于Nginx的最简单的负载均衡 | 2017 My Best Wishes </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -277,7 +273,7 @@
   
 
   <article class="post post-type-draft " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://blog.todolist.win/2017/06/10/20170610-note-architecture/">
+  <link itemprop="mainEntityOfPage" href="http://blog.todolist.win/2017/06/09/nginx/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Lazyducker">
@@ -301,7 +297,7 @@
             
             
               
-                一些关于架构的
+                基于Nginx的最简单的负载均衡
               
             
           </h1>
@@ -316,8 +312,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-10T22:58:39+08:00">
-                2017-06-10
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-09T11:44:52+08:00">
+                2017-06-09
               </time>
             
 
@@ -362,6 +358,10 @@
           
 
           
+              <div class="post-description">
+                  一些札记
+              </div>
+          
 
         </div>
       </header>
@@ -374,58 +374,39 @@
       
 
       
-        <h3 id="guan-yu-jia-gou-zhuan"><a href="guan-yu-jia-gou-zhuan" class="header-anchor">"#"</a><a href="#关于架构-转" class="headerlink" title="关于架构[转]"></a>关于架构[转]</h3><hr>
-<p><a href="http://www.infoq.com/cn/articles/every-architect-should-study-conway-law/" target="_blank" rel="external">原文地址</a> </p>
-<h4 id="jia-gou-de-ding-yi-yu-li-jie"><a href="jia-gou-de-ding-yi-yu-li-jie" class="header-anchor">"#"</a><a href="#架构的定义与理解" class="headerlink" title="架构的定义与理解"></a>架构的定义与理解</h4><p>一. 架构系统前, 架构师的首要任务是 尽最快可能找到利益相关者: <code>业务方</code>, <code>产品经理</code>, <code>客户/用户</code>, <code>开发经理</code>, <code>工程师</code>, <code>项目经理</code>,  <code>测试人员</code> , <code>运维人员</code> ,<code>产品运营人员</code> 等等都可能是利益相关者, 架构师要充分和利益相关者沟通, 深入了解他们的关注点和痛点, 并找出并构架出这些关注点的解决方案.</p>
-<p>二. 利益相关者的关注点是有可能冲突的, 比如: </p>
+        <h5 id="cha-kan-linux-shang-duan-kou-de-zhan-yong-qing-kuang"><a href="cha-kan-linux-shang-duan-kou-de-zhan-yong-qing-kuang" class="header-anchor">"#"</a><a href="#查看linux上端口的占用情况" class="headerlink" title="查看linux上端口的占用情况"></a>查看linux上端口的占用情况</h5><blockquote>
+<p>单机多端口应用做负载均衡部署时，选择tomcat配置不同端口</p>
+<p>使用lsof 命令配合-i参数，即可查看指定端口的占用情况<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[root@localhost webapps]# lsof -i:8082</div><div class="line">COMMAND   PID USER   FD   TYPE  DEVICE SIZE/OFF NODE NAME</div><div class="line">java    29756 root   50u  IPv6 6161829      0t0  TCP *:us-cli (LISTEN)</div></pre></td></tr></table></figure></p>
+</blockquote>
+<h5 id="ji-yu-openresty-de-nginx-zuo-fu-zai-jun-heng-pei-zhi"><a href="ji-yu-openresty-de-nginx-zuo-fu-zai-jun-heng-pei-zhi" class="header-anchor">"#"</a><a href="#基于Openresty的nginx做负载均衡配置" class="headerlink" title="基于Openresty的nginx做负载均衡配置"></a>基于Openresty的nginx做负载均衡配置</h5><p>说是基于Openresty，其实这里主要还是用nginx做负载,至于Openresty的使用，后面专题再讲  </p>
+<p>nginx要做下面几个配置:  </p>
+<ul>
+<li>upstream配置</li>
+<li>nginx.conf配置</li>
+</ul>
+<ol>
+<li>upstream配置如下:<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">upstream wxshop &#123;</div><div class="line">    ip_hash;</div><div class="line">    server 127.0.0.1:8089 weight=1 max_fails=3 fail_timeout=10s;</div><div class="line">    server 127.0.0.1:8082 weight=1 max_fails=3 fail_timeout=10s;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ol>
 <blockquote>
-<ol>
-<li>管理者(可管理性) VS 技术方 (性能)</li>
-<li>业务方(多快好省) VS 技术方(可靠稳定)   </li>
-</ol>
+<p>关于upstream更详细的用法，参考另一篇博客 <a href="">Nginx模块之-upstream</a>  </p>
 </blockquote>
-<p>等等这些需要架构师去灵活的平衡, 如何平衡体现了架构师的水平</p>
-<p>三. 架构主要关注非功能性需求 </p>
+<p>PS:<br>部分参数说明:  </p>
 <blockquote>
-<ol>
-<li>易于分解(保持独立性)</li>
-<li>易于理解</li>
-<li>易于扩展</li>
-<li>易于变更</li>
-<li>易于替换</li>
-<li>易于部署</li>
-<li>易于伸缩(伸缩性)</li>
-<li>易于恢复(还原能力)</li>
-<li>易于连接(统一接口)</li>
-<li>易于交付(成本&amp;效率)</li>
-</ol>
+<p><strong>ip_hash</strong> 用于通知nginx使用ip hash负载均衡算法,<br>如果没加这条指令，nginx会使用默认的round robin负载均衡模块<br><strong>weight</strong> 访问权重,默认1，值越大，权重越大<br><strong>max_fails</strong> 允许请求失败的次数默认为1.当超过最大次数时，返回proxy_next_upstream 模块定义的错误<br><strong>fail_timeout</strong> ==max_fails== 次失败后，暂停的时间<br><strong>down</strong> 表示单前的server暂时不参与负载<br><strong>backup</strong> 其它所有的非backup机器down或者忙的时候，请求backup机器。所以这台机器压力会最轻  </p>
 </blockquote>
-<p>四. 架构的目的用于管理复杂性、易变性和不确定性， 确保长期演变的架构部分的变化不会对架构的其他部分产生不必要的负面影响. 这样可以确保业务和开发的敏捷， 让应用的易变部分能够频繁的变化而不影响（或者影响更少）应用其他部分  </p>
-<p>五. 国内企业IT的现状是：无数高耦合的遗留系统，不良的架构设计导致限制了企业的业务，升级替换的成本巨大，<u>所以此时架构的关注点由性能、高可用转变为更加关注可维护性、可扩展性、成本</u>。 所以企业创业之初选择好的架构师或技术负责人非常重要.<br>……<br><a id="more"></a> </p>
-<h4 id="jia-gou-de-die-dai-he-yan-hua-xing"><a href="jia-gou-de-die-dai-he-yan-hua-xing" class="header-anchor">"#"</a><a href="#架构的迭代和演化性" class="headerlink" title="架构的迭代和演化性"></a>架构的迭代和演化性</h4><h5 id="yi-rup-de-san-ge-te-dian"><a href="yi-rup-de-san-ge-te-dian" class="header-anchor">"#"</a><a href="#一-RUP的三个特点" class="headerlink" title="一. RUP的三个特点"></a>一. RUP的三个特点</h5><blockquote>
 <ol>
-<li>用例和风险驱动(use case and risk driven)</li>
-<li>架构中心(Architecture centric)</li>
-<li>迭代和增量(Iterative and incremental) </li>
+<li>nginx.conf配置如下  <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div></pre></td><td class="code"><pre><div class="line">location /shop &#123;</div><div class="line">                proxy_pass http://wxshop;</div><div class="line">                proxy_redirect off;</div><div class="line">                proxy_set_header Host $host;</div><div class="line">                proxy_set_header X-Forwarded-For $remote_addr;</div><div class="line">                #client_max_body_size 20m;</div><div class="line">                #client_body_buffer_size 128k;</div><div class="line">                #proxy_connect_timeout 600;</div><div class="line">                #proxy_send_timeout 600;</div><div class="line">                #proxy_read_timeout 900;</div><div class="line">                #proxy_buffer_size 4k;</div><div class="line">                #proxy_buffers 4 32k;</div><div class="line">                #proxy_busy_buffers_size 64k;</div><div class="line">                #proxy_temp_file_write_size 64k;</div><div class="line">        &#125;</div><div class="line">        location /shop2 &#123;</div><div class="line">                proxy_pass http://192.168.8.118:8089/shop;</div><div class="line">                proxy_redirect off;</div><div class="line">                proxy_set_header Host $host;</div><div class="line">                root html;</div><div class="line">                index index.html index.jsp index.htm;</div><div class="line"></div><div class="line">        &#125;</div><div class="line">        location /shop3/ &#123;</div><div class="line">                proxy_pass http://192.168.8.118:8082/shop;</div><div class="line">                proxy_redirect off;</div><div class="line">                proxy_set_header Host $host;</div><div class="line">                root html;</div><div class="line">                index index.html index.jsp index.htm;</div><div class="line">        &#125;</div><div class="line">        location /wxpay3 &#123;</div><div class="line">                proxy_pass http://192.168.8.118:8082/wxpay;</div><div class="line">                proxy_redirect off;</div><div class="line">                proxy_set_header Host $host;</div><div class="line">                root html;</div><div class="line">                index index.html index.jsp index.htm;</div><div class="line">        &#125;</div><div class="line">        location /wxpay &#123;</div><div class="line">                proxy_pass http://192.168.8.118:8089/wxpay;</div><div class="line">                proxy_redirect off;</div><div class="line">                proxy_set_header Host $host;</div><div class="line">                root html;</div><div class="line">                index index.html index.jsp index.htm;</div><div class="line">        &#125;</div></pre></td></tr></table></figure>
+</li>
 </ol>
-</blockquote>
-<p>RUP提倡以架构和风险驱动, 项目一开始要做到 端到端的原型(prototype) ； 通过压力测试验证框架的可行性 ，在原型的基础上进行持续迭代和增量开发， 开发-&gt;测试-&gt;调整架构-&gt;开发</p>
-<p><img src="/2017/06/10/20170610-note-architecture/114.jpg" alt=""></p>
-<p>从上面的图可以看出：<code>架构是一个不断演进和迭代的过程</code> 而不是一蹴而就 ，一来就求大而全（架构师的完美主义不一定是好事），所以架构师要尽量写代码，做测试，否则纸上谈兵然后丢给开发团队是很不负责任的做法，容易造成产品不能满足最终用户需求。</p>
-<h5 id="er-zui-xiao-ke-yong-chan-pin"><a href="er-zui-xiao-ke-yong-chan-pin" class="header-anchor">"#"</a><a href="#二-最小可用产品" class="headerlink" title="二. 最小可用产品"></a>二. 最小可用产品</h5><p>最小可用产品（Minimum Viable Product， MVP）理念, 即迅速做出最小可用的产品，丢给客户试用，快速获取用户反馈，在此基础上不断进行产品架构的迭代和演化升级: </p>
-<p><img src="/2017/06/10/20170610-note-architecture/115.jpg" alt=""></p>
-<p>如上图就是描述了架构师应该迅速做出最小可用产品，从而使得用户尽快试用产品并在此基础上快速更新升级，否则做出最终的产品无法满足客户需求而导致了成本和风险的提高。</p>
-<p><img src="/2017/06/10/20170610-note-architecture/116.jpg" alt=""></p>
-<p>上图反应了过度工程(Over Engineering)的问题, 其实就是产品架构和用户之间没有形成有效的反馈闭环</p>
-<blockquote class="blockquote-center"><br><br><strong> 注意 </strong> ，在系统真正地投入生产使用之前，再好的架构都只是假设，产品越晚被使用者使用，失败的成本和风险就越高，而小步行进，通过 <strong><strong> MVP </strong></strong> 快速实验，获取客户反馈，迭代演化产品，能有效地减少失败的成本和风险。<br><br></blockquote>
-
-
-
-
-
-<h5 id="can-kao-zi-liao"><a href="can-kao-zi-liao" class="header-anchor">"#"</a><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h5><ul>
-<li><a href="http://itrevolution.com/the-three-ways-principles-underpinning-devops/" target="_blank" rel="external">THE THREE WAYS: THE PRINCIPLES UNDERPINNING DEVOPS</a></li>
-<li><a href="http://baike.baidu.com/link?url=PcIm9RTOWnAd0rqN7f5rrlbt9QmjWgPctJ5i4K5ObjPqD7KtOMIQRBiUVMZ5YpuQ_uymtAdsT-n-0hB4sCVyNK" target="_blank" rel="external">统一软件开发过程</a></li>
+<h5 id="session-gong-xiang"><a href="session-gong-xiang" class="header-anchor">"#"</a><a href="#session共享" class="headerlink" title="session共享"></a>session共享</h5><p>session共享问题是负载均衡部署很重要的问题，如果是一个用户的请求始终分配到其中一台服务器上，就不存在session共享的问题，如果是一个用户的请求可能被分配到多台服务器时，就存在session共享问题了，<br>我们的系统中主要是采用了spring redis的结合，将整个web端的会话存储到redis中，从而实现了session共享</p>
+<p>未完待续……</p>
+<h5 id="can-kao-wen-dang"><a href="can-kao-wen-dang" class="header-anchor">"#"</a><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h5><ul>
+<li><a href="http://tengine.taobao.org/book/chapter_05.html" target="_blank" rel="external">Nginx模块开发篇</a></li>
+<li><a href="http://debugo.com/nginx-web-upstream/" target="_blank" rel="external">Nginx基本服务与upstream配置详解</a>  </li>
+<li><a href="http://blog.csdn.net/andong154564667/article/details/52121765" target="_blank" rel="external">实现nginx的负载均衡</a></li>
+<li><a href="http://www.cnblogs.com/mecity/archive/2011/06/20/2085529.html" target="_blank" rel="external">Nginx的负载均衡的那点事</a></li>
+<li>[<a href="https://github.com/ewolff/microservice" target="_blank" rel="external">https://github.com/ewolff/microservice</a>]</li>
 </ul>
 
       
@@ -459,8 +440,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/09/札记/" rel="next" title="札记">
-                <i class="fa fa-chevron-left"></i> 札记
+              <a href="/2017/01/17/JVM性能分析之Dump文件生成与分析/" rel="next" title="JVM性能分析之Dump文件生成与分析">
+                <i class="fa fa-chevron-left"></i> JVM性能分析之Dump文件生成与分析
               </a>
             
           </div>
@@ -469,8 +450,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/06/11/20170611-note/" rel="prev" title="空-雨-伞">
-                空-雨-伞 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/06/09/札记/" rel="prev" title="札记">
+                札记 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -601,7 +582,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#guan-yu-jia-gou-zhuan"><span class="nav-text">"#"关于架构[转]</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#jia-gou-de-ding-yi-yu-li-jie"><span class="nav-text">"#"架构的定义与理解</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#jia-gou-de-die-dai-he-yan-hua-xing"><span class="nav-text">"#"架构的迭代和演化性</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#yi-rup-de-san-ge-te-dian"><span class="nav-text">"#"一. RUP的三个特点</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#er-zui-xiao-ke-yong-chan-pin"><span class="nav-text">"#"二. 最小可用产品</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#can-kao-zi-liao"><span class="nav-text">"#"参考资料</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#cha-kan-linux-shang-duan-kou-de-zhan-yong-qing-kuang"><span class="nav-text">"#"查看linux上端口的占用情况</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#ji-yu-openresty-de-nginx-zuo-fu-zai-jun-heng-pei-zhi"><span class="nav-text">"#"基于Openresty的nginx做负载均衡配置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#session-gong-xiang"><span class="nav-text">"#"session共享</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#can-kao-wen-dang"><span class="nav-text">"#"参考文档</span></a></li></ol></div>
             
 
           </div>

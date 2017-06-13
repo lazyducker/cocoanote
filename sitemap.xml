@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.todolist.win/2017/06/09/nginx/</loc>
+    
+    <lastmod>2017-06-13T10:56:18.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.todolist.win/2017/06/11/20170611-note/</loc>
+    
+    <lastmod>2017-06-11T17:40:21.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.todolist.win/2017/06/10/20170610-note-architecture/</loc>
     
-    <lastmod>2017-06-11T09:02:10.000Z</lastmod>
+    <lastmod>2017-06-11T09:19:04.000Z</lastmod>
     
   </url>
   
