@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.todolist.win/"/>
-  <updated>2017-06-11T17:40:21.000Z</updated>
+  <updated>2017-07-08T13:49:19.000Z</updated>
   <id>http://blog.todolist.win/</id>
   
   <author>
@@ -14,6 +14,53 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>h5</title>
+    <link href="http://blog.todolist.win/2017/07/08/h5/"/>
+    <id>http://blog.todolist.win/2017/07/08/h5/</id>
+    <published>2017-07-08T13:49:19.000Z</published>
+    <updated>2017-07-08T13:49:19.000Z</updated>
+    
+    <summary type="html">
+    
+      一些札记
+    
+    </summary>
+    
+      <category term="Home" scheme="http://blog.todolist.win/categories/Home/"/>
+    
+    
+      <category term="日记" scheme="http://blog.todolist.win/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用hexo命令</title>
+    <link href="http://blog.todolist.win/2017/07/08/hexocommand/"/>
+    <id>http://blog.todolist.win/2017/07/08/hexocommand/</id>
+    <published>2017-07-08T13:32:44.000Z</published>
+    <updated>2017-07-08T15:25:15.000Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="hexo-an-zhuang-ming-ling"><a href="hexo-an-zhuang-ming-ling" class="header-anchor">"#"</a><a href="#Hexo-安装命令" class="headerlink" title="Hexo 安装命令"></a>Hexo 安装命令</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm install hexo -g #安装  </div><div class="line">npm update hexo -g #升级  </div><div class="line">hexo init #初始化</div></pre></td></tr></table></figure>
+<h5 id="chuang-jian-ming-ling"><a href="chuang-jian-ming-ling" class="header-anchor">"#"</a><a href="#创建命令" class="headerlink" title="创建命令"></a>创建命令</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">`hexo n "Article Title"` #n是new的简写</div><div class="line">`hexo p` #发布文章，同 hexo publish</div><div class="line">`hexo g` #生成静态内容，同hexo generate</div><div class="line">`hexo s` #启动本地预览服务，同hexo server</div><div class="line">`hexo d` #部署到远程服务，比如github等</div><div class="line">`hexo clean` #清楚缓存，一般很少用</div></pre></td></tr></table></figure>
+<h5 id="server-ming-ling"><a href="server-ming-ling" class="header-anchor">"#"</a><a href="#server命令" class="headerlink" title="server命令"></a>server命令</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">`hexo server -s` #静态模式</div><div class="line">`hexo server -p 5000` #更改端口</div><div class="line">`hexo server -i 192.168.1.1` #更改ip</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h5 id=&quot;hexo-an-zhuang-ming-ling&quot;&gt;&lt;a href=&quot;hexo-an-zhuang-ming-ling&quot; class=&quot;header-anchor&quot;&gt;&quot;#&quot;&lt;/a&gt;&lt;a href=&quot;#Hexo-安装命令&quot; class=&quot;headerlink&quot; ti
+    
+    </summary>
+    
+      <category term="Home" scheme="http://blog.todolist.win/categories/Home/"/>
+    
+      <category term="Hexo" scheme="http://blog.todolist.win/categories/Home/Hexo/"/>
+    
+    
+      <category term="日记" scheme="http://blog.todolist.win/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>空-雨-伞</title>

@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.todolist.win/2017/07/08/hexocommand/</loc>
+    
+    <lastmod>2017-07-08T15:25:15.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.todolist.win/2017/07/08/h5/</loc>
+    
+    <lastmod>2017-07-08T13:49:19.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.todolist.win/2017/06/09/nginx/</loc>
     
     <lastmod>2017-06-13T10:56:18.000Z</lastmod>
