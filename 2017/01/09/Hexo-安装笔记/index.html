@@ -93,6 +93,7 @@
 <meta property="og:url" content="http://blog.todolist.win/2017/01/09/Hexo-安装笔记/index.html">
 <meta property="og:site_name" content="2017 My Best Wishes">
 <meta property="og:description" content="终于开始了2017年的第一篇博客了，想想没说好说的，要不就从搭建一个github网站开始吧，这里我用的是Hexo静态博客，使用Github的Pages服务并绑定个人域名http://blog.todolist.win">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2017-06-08T11:47:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 安装笔记">
@@ -378,16 +379,16 @@
 <!-- tocstop -->
 </div>
 
-<h3 id="hexo-an-zhuang-bi-ji"><a href="hexo-an-zhuang-bi-ji" class="header-anchor">"#"</a><a href="#Hexo-安装笔记" class="headerlink" title="Hexo 安装笔记"></a>Hexo 安装笔记</h3><h4 id="1-jian-yao-shuo-ming"><a href="1-jian-yao-shuo-ming" class="header-anchor">"#"</a><a href="#1-简要说明" class="headerlink" title="1.简要说明"></a>1.简要说明</h4><p><a href="https://hexo.io/" target="_blank" rel="external">https://hexo.io/</a><br>使用npm安装命令如下</p>
+<h3><a href="#hexo-an-zhuang-bi-ji" class="header-anchor">#</a><span id="hexo-an-zhuang-bi-ji">Hexo 安装笔记</span></h3><h4><a href="#1-jian-yao-shuo-ming" class="header-anchor">#</a><span id="1-jian-yao-shuo-ming">1.简要说明</span></h4><p><a href="https://hexo.io/" target="_blank" rel="noopener">https://hexo.io/</a><br>使用npm安装命令如下</p>
 <blockquote>
 <p>npm install hexo-cli -g<br>hexo init blog<br>cd blog<br>npm install<br>hexo server</p>
 </blockquote>
 <p>npm在国内访问较慢，可以使用阿里的镜像地址，使用如下命令切换<br><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code><br>后续命令npm命令使用 cnpm代替</p>
-<h4 id="2-hexo-chang-yong-ming-ling"><a href="2-hexo-chang-yong-ming-ling" class="header-anchor">"#"</a><a href="#2-Hexo常用命令" class="headerlink" title="2. Hexo常用命令"></a>2. Hexo常用命令</h4><h5 id="init"><a href="init" class="header-anchor">"#"</a><a href="#init" class="headerlink" title="init"></a>init</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo init [folder]</div></pre></td></tr></table></figure>
+<h4><a href="#2-hexo-chang-yong-ming-ling" class="header-anchor">#</a><span id="2-hexo-chang-yong-ming-ling">2. Hexo常用命令</span></h4><h5><a href="#init" class="header-anchor">#</a><span id="init">init</span></h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo init [folder]</span><br></pre></td></tr></table></figure>
 <p>初始化一个新的网站目录,如果不指定则默认使用当前目录</p>
-<h5 id="new"><a href="new" class="header-anchor">"#"</a><a href="#new" class="headerlink" title="new"></a>new</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo new [layout] &lt;title&gt;</div></pre></td></tr></table></figure>
+<h5><a href="#new" class="header-anchor">#</a><span id="new">new</span></h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
 <p>创建一篇新的文章，使用layout指定的布局方式，如果layout不指定，则使用<code>_config.yml</code> 中的<code>default_layout</code>  指定的值, title为文章标题，如果title中含有空格，需要使用双引号包含整个title</p>
-<h5 id="generate"><a href="generate" class="header-anchor">"#"</a><a href="#generate" class="headerlink" title="generate"></a>generate</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<h5><a href="#generate" class="header-anchor">#</a><span id="generate">generate</span></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 <p>创建静态文件,有如下参数</p>
 <table>
 <thead>
@@ -407,9 +408,9 @@
 </tr>
 </tbody>
 </table>
-<h5 id="publish"><a href="publish" class="header-anchor">"#"</a><a href="#publish" class="headerlink" title="publish"></a>publish</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo publish [layout] &lt;filename&gt;</div></pre></td></tr></table></figure>
+<h5><a href="#publish" class="header-anchor">#</a><span id="publish">publish</span></h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo publish [layout] &lt;filename&gt;</span><br></pre></td></tr></table></figure>
 <p>发布一条草稿</p>
-<h5 id="server"><a href="server" class="header-anchor">"#"</a><a href="#server" class="headerlink" title="server"></a>server</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo server</div></pre></td></tr></table></figure>
+<h5><a href="#server" class="header-anchor">#</a><span id="server">server</span></h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo server</span><br></pre></td></tr></table></figure>
 <p>启动本地服务: 默认访问地址是 <code>http://localhost:4000/</code></p>
 <table>
 <thead>
@@ -433,7 +434,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="deploy"><a href="deploy" class="header-anchor">"#"</a><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo deploy</div></pre></td></tr></table></figure>
+<h5><a href="#deploy" class="header-anchor">#</a><span id="deploy">deploy</span></h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo deploy</span><br></pre></td></tr></table></figure>
 <p>部署网站</p>
 <table>
 <thead>
@@ -449,7 +450,7 @@
 </tr>
 </tbody>
 </table>
-<h5 id="render"><a href="render" class="header-anchor">"#"</a><a href="#render" class="headerlink" title="render"></a>render</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo render &lt;file1&gt; [file2] ...</div></pre></td></tr></table></figure>
+<h5><a href="#render" class="header-anchor">#</a><span id="render">render</span></h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo render &lt;file1&gt; [file2] ...</span><br></pre></td></tr></table></figure>
 <p>渲染文件</p>
 <table>
 <thead>
@@ -465,13 +466,13 @@
 </tr>
 </tbody>
 </table>
-<h5 id="migrate"><a href="migrate" class="header-anchor">"#"</a><a href="#migrate" class="headerlink" title="migrate"></a>migrate</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo migrate &lt;type&gt;</div></pre></td></tr></table></figure>
+<h5><a href="#migrate" class="header-anchor">#</a><span id="migrate">migrate</span></h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo migrate &lt;type&gt;</span><br></pre></td></tr></table></figure>
 <p>从其他博客系统迁移内容</p>
-<h5 id="clean"><a href="clean" class="header-anchor">"#"</a><a href="#clean" class="headerlink" title="clean"></a>clean</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo clean</div></pre></td></tr></table></figure>
+<h5><a href="#clean" class="header-anchor">#</a><span id="clean">clean</span></h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo clean</span><br></pre></td></tr></table></figure>
 <p>清理缓存文件<code>(db.json)</code> 然后重新创建文件目录 <code>(public)</code>.</p>
-<h5 id="list"><a href="list" class="header-anchor">"#"</a><a href="#list" class="headerlink" title="list"></a>list</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> hexo list &lt;type&gt;</div></pre></td></tr></table></figure>
+<h5><a href="#list" class="header-anchor">#</a><span id="list">list</span></h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo list &lt;type&gt;</span><br></pre></td></tr></table></figure>
 <p>列举网站(博客)信息List the information of the site.<br>type可选的值列表 : page, post, route, tag, category</p>
-<h4 id="ru-he-bu-shu-dao-github-shang"><a href="ru-he-bu-shu-dao-github-shang" class="header-anchor">"#"</a><a href="#如何部署到GitHub上" class="headerlink" title="如何部署到GitHub上"></a>如何部署到GitHub上</h4><p>关于如何开启GitHub的Pages服务,网上的资料太多,而且大同小异, 这里就不在重复.</p>
+<h4><a href="#ru-he-bu-shu-dao-github-shang" class="header-anchor">#</a><span id="ru-he-bu-shu-dao-github-shang">如何部署到GitHub上</span></h4><p>关于如何开启GitHub的Pages服务,网上的资料太多,而且大同小异, 这里就不在重复.</p>
 <blockquote>
 <p>编辑完文章后 使用 <code>hexo d -g</code> 即可部署到GitHub上</p>
 </blockquote>
@@ -479,9 +480,9 @@
 <hr>
 <p>参考引用:   </p>
 <ul>
-<li><a href="http://blog.csdn.net/jzooo/article/details/46781805" target="_blank" rel="external">http://blog.csdn.net/jzooo/article/details/46781805</a>  </li>
-<li><a href="http://baixin.io/2016/06/HEXO_Advanced/" target="_blank" rel="external">http://baixin.io/2016/06/HEXO_Advanced/</a>  </li>
-<li><a href="http://www.jianshu.com/p/465830080ea9" target="_blank" rel="external">http://www.jianshu.com/p/465830080ea9</a></li>
+<li><a href="http://blog.csdn.net/jzooo/article/details/46781805" target="_blank" rel="noopener">http://blog.csdn.net/jzooo/article/details/46781805</a>  </li>
+<li><a href="http://baixin.io/2016/06/HEXO_Advanced/" target="_blank" rel="noopener">http://baixin.io/2016/06/HEXO_Advanced/</a>  </li>
+<li><a href="http://www.jianshu.com/p/465830080ea9" target="_blank" rel="noopener">http://www.jianshu.com/p/465830080ea9</a></li>
 </ul>
 
       
@@ -597,7 +598,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -657,7 +658,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-an-zhuang-bi-ji"><span class="nav-text">"#"Hexo 安装笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-jian-yao-shuo-ming"><span class="nav-text">"#"1.简要说明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-hexo-chang-yong-ming-ling"><span class="nav-text">"#"2. Hexo常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#init"><span class="nav-text">"#"init</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#new"><span class="nav-text">"#"new</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#generate"><span class="nav-text">"#"generate</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#publish"><span class="nav-text">"#"publish</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#server"><span class="nav-text">"#"server</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#deploy"><span class="nav-text">"#"deploy</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#render"><span class="nav-text">"#"render</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#migrate"><span class="nav-text">"#"migrate</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#clean"><span class="nav-text">"#"clean</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#list"><span class="nav-text">"#"list</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ru-he-bu-shu-dao-github-shang"><span class="nav-text">"#"如何部署到GitHub上</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">#Hexo 安装笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">#1.简要说明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">#2. Hexo常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">#init</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">#new</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">#generate</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">#publish</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">#server</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">#deploy</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">#render</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">#migrate</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">#clean</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">#list</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">#如何部署到GitHub上</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -678,7 +679,7 @@
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
