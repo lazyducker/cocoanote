@@ -343,16 +343,16 @@
       
 
       
-        <h3 id="dump-ji-ben-gai-nian"><a href="dump-ji-ben-gai-nian" class="header-anchor">"#"</a><a href="#Dump基本概念" class="headerlink" title="Dump基本概念"></a>Dump基本概念</h3><p>常用dump文件分为: heap dump和 thread dump两种，heap dump主要记录了内存信息，thread dump 记录了CPU信息 </p>
+        <h3><a href="#dump-ji-ben-gai-nian" class="header-anchor">#</a><span id="dump-ji-ben-gai-nian">Dump基本概念</span></h3><p>常用dump文件分为: heap dump和 thread dump两种，heap dump主要记录了内存信息，thread dump 记录了CPU信息 </p>
 <p><strong><code>heap dump</code></strong> 文件是一个二进制文件，它保存了某一时刻JVM堆中对象使用情况。HeapDump文件是指定时刻的Java堆栈的快照，是一种镜像文件。Heap Analyzer工具通过分析HeapDump文件，哪些对象占用了太多的堆栈空间，来发现导致内存泄露或者可能引起内存泄露的对象。</p>
 <p><strong><code>thread dump</code></strong> 文件主要保存的是java应用中各线程在某一时刻的运行的位置，即执行到哪一个类的哪一个方法哪一个行上。thread dump是一个文本文件，打开后可以看到每一个线程的执行栈，以stacktrace的方式显示。通过对thread dump的分析可以得到应用是否“卡”在某一点上，即在某一点运行的时间太长，如数据库查询，长期得不到响应，最终导致系统崩溃。单个的thread dump文件一般来说是没有什么用处的，因为它只是记录了某一个绝对时间点的情况。比较有用的是，线程在一个时间段内的执行情况。<br>两个thread dump文件在分析时特别有效，困为它可以看出在先后两个时间点上，线程执行的位置，如果发现先后两组数据中同一线程都执行在同一位置，则说明此处可能有问题，因为程序运行是极快的，如果两次均在某一点上，说明这一点的耗时是很大的。通过对这两个文件进行分析，查出原因，进而解决问题。</p>
 <p>这两个文件可以使用jdk自带的工具生成. . </p>
-<h4 id="heap-dump"><a href="heap-dump" class="header-anchor">"#"</a><a href="#heap-dump" class="headerlink" title="heap dump"></a>heap dump</h4><p>使用 jdk的jmap命令<br><code>jmap -dump:format=b,file=heap.hprof 2576</code> </p>
+<h4><a href="#heap-dump" class="header-anchor">#</a><span id="heap-dump">heap dump</span></h4><p>使用 jdk的jmap命令<br><code>jmap -dump:format=b,file=heap.hprof 2576</code> </p>
 <p>如果我们只需要将dump中存活的对象导出，那么可以使用:live参数 </p>
 <p><code>jmap -dump:live,format=b,file=heapLive.hprof 2576</code>  </p>
-<h4 id="thread-dump"><a href="thread-dump" class="header-anchor">"#"</a><a href="#thread-dump" class="headerlink" title="thread dump"></a>thread dump</h4><p>使用 <code>jstack 2576 &gt; thread.txt</code>  </p>
+<h4><a href="#thread-dump" class="header-anchor">#</a><span id="thread-dump">thread dump</span></h4><p>使用 <code>jstack 2576 &gt; thread.txt</code>  </p>
 <p>有了dump文件后，再结合使用性能分析工具就可以获取并分析文件中的系统信息  </p>
-<h3 id="shi-yong-gong-ju-fen-xi-heap-dump-wen-jian"><a href="shi-yong-gong-ju-fen-xi-heap-dump-wen-jian" class="header-anchor">"#"</a><a href="#使用工具分析heap-dump文件" class="headerlink" title="使用工具分析heap dump文件"></a>使用工具分析heap dump文件</h3><h4 id="jhat-ming-ling"><a href="jhat-ming-ling" class="header-anchor">"#"</a><a href="#jhat命令" class="headerlink" title="jhat命令"></a>jhat命令</h4><h4 id="eclipse-mat"><a href="eclipse-mat" class="header-anchor">"#"</a><a href="#eclipse-MAT" class="headerlink" title="eclipse MAT"></a>eclipse MAT</h4>
+<h3><a href="#shi-yong-gong-ju-fen-xi-heap-dump-wen-jian" class="header-anchor">#</a><span id="shi-yong-gong-ju-fen-xi-heap-dump-wen-jian">使用工具分析heap dump文件</span></h3><h4><a href="#jhat-ming-ling" class="header-anchor">#</a><span id="jhat-ming-ling">jhat命令</span></h4><h4><a href="#eclipse-mat" class="header-anchor">#</a><span id="eclipse-mat">eclipse MAT</span></h4>
       
     </div>
 
@@ -526,7 +526,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#dump-ji-ben-gai-nian"><span class="nav-text">&quot;#&quot;Dump基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#heap-dump"><span class="nav-text">&quot;#&quot;heap dump</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#thread-dump"><span class="nav-text">&quot;#&quot;thread dump</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#shi-yong-gong-ju-fen-xi-heap-dump-wen-jian"><span class="nav-text">&quot;#&quot;使用工具分析heap dump文件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#jhat-ming-ling"><span class="nav-text">&quot;#&quot;jhat命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#eclipse-mat"><span class="nav-text">&quot;#&quot;eclipse MAT</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">#Dump基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">#heap dump</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">#thread dump</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">#使用工具分析heap dump文件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">#jhat命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">#eclipse MAT</span></a></li></ol></li></ol></div>
             
 
           </div>

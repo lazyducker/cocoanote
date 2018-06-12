@@ -365,9 +365,9 @@
       
 
       
-        <h3 id="guan-yu-jia-gou-zhuan"><a href="guan-yu-jia-gou-zhuan" class="header-anchor">"#"</a><a href="#关于架构-转" class="headerlink" title="关于架构[转]"></a>关于架构[转]</h3><hr>
-<p><a href="http://www.infoq.com/cn/articles/every-architect-should-study-conway-law/" target="_blank" rel="external">原文地址</a> </p>
-<h4 id="jia-gou-de-ding-yi-yu-li-jie"><a href="jia-gou-de-ding-yi-yu-li-jie" class="header-anchor">"#"</a><a href="#架构的定义与理解" class="headerlink" title="架构的定义与理解"></a>架构的定义与理解</h4><p>一. 架构系统前, 架构师的首要任务是 尽最快可能找到利益相关者: <code>业务方</code>, <code>产品经理</code>, <code>客户/用户</code>, <code>开发经理</code>, <code>工程师</code>, <code>项目经理</code>,  <code>测试人员</code> , <code>运维人员</code> ,<code>产品运营人员</code> 等等都可能是利益相关者, 架构师要充分和利益相关者沟通, 深入了解他们的关注点和痛点, 并找出并构架出这些关注点的解决方案.</p>
+        <h3><a href="#guan-yu-jia-gou-zhuan" class="header-anchor">#</a><span id="guan-yu-jia-gou-zhuan">关于架构[转]</span></h3><hr>
+<p><a href="http://www.infoq.com/cn/articles/every-architect-should-study-conway-law/" target="_blank" rel="noopener">原文地址</a> </p>
+<h4><a href="#jia-gou-de-ding-yi-yu-li-jie" class="header-anchor">#</a><span id="jia-gou-de-ding-yi-yu-li-jie">架构的定义与理解</span></h4><p>一. 架构系统前, 架构师的首要任务是 尽最快可能找到利益相关者: <code>业务方</code>, <code>产品经理</code>, <code>客户/用户</code>, <code>开发经理</code>, <code>工程师</code>, <code>项目经理</code>,  <code>测试人员</code> , <code>运维人员</code> ,<code>产品运营人员</code> 等等都可能是利益相关者, 架构师要充分和利益相关者沟通, 深入了解他们的关注点和痛点, 并找出并构架出这些关注点的解决方案.</p>
 <p>二. 利益相关者的关注点是有可能冲突的, 比如: </p>
 <blockquote>
 <ol>
@@ -393,7 +393,7 @@
 </blockquote>
 <p>四. 架构的目的用于管理复杂性、易变性和不确定性， 确保长期演变的架构部分的变化不会对架构的其他部分产生不必要的负面影响. 这样可以确保业务和开发的敏捷， 让应用的易变部分能够频繁的变化而不影响（或者影响更少）应用其他部分  </p>
 <p>五. 国内企业IT的现状是：无数高耦合的遗留系统，不良的架构设计导致限制了企业的业务，升级替换的成本巨大，<u>所以此时架构的关注点由性能、高可用转变为更加关注可维护性、可扩展性、成本</u>。 所以企业创业之初选择好的架构师或技术负责人非常重要.<br>……<br><a id="more"></a> </p>
-<h4 id="jia-gou-de-die-dai-he-yan-hua-xing"><a href="jia-gou-de-die-dai-he-yan-hua-xing" class="header-anchor">"#"</a><a href="#架构的迭代和演化性" class="headerlink" title="架构的迭代和演化性"></a>架构的迭代和演化性</h4><h5 id="yi-rup-de-san-ge-te-dian"><a href="yi-rup-de-san-ge-te-dian" class="header-anchor">"#"</a><a href="#一-RUP的三个特点" class="headerlink" title="一. RUP的三个特点"></a>一. RUP的三个特点</h5><blockquote>
+<h4><a href="#jia-gou-de-die-dai-he-yan-hua-xing" class="header-anchor">#</a><span id="jia-gou-de-die-dai-he-yan-hua-xing">架构的迭代和演化性</span></h4><h5><a href="#yi-rup-de-san-ge-te-dian" class="header-anchor">#</a><span id="yi-rup-de-san-ge-te-dian">一. RUP的三个特点</span></h5><blockquote>
 <ol>
 <li>用例和风险驱动(use case and risk driven)</li>
 <li>架构中心(Architecture centric)</li>
@@ -403,7 +403,7 @@
 <p>RUP提倡以架构和风险驱动, 项目一开始要做到 端到端的原型(prototype) ； 通过压力测试验证框架的可行性 ，在原型的基础上进行持续迭代和增量开发， 开发-&gt;测试-&gt;调整架构-&gt;开发</p>
 <p><img src="/2017/06/10/20170610-note-architecture/114.jpg" alt=""></p>
 <p>从上面的图可以看出：<code>架构是一个不断演进和迭代的过程</code> 而不是一蹴而就 ，一来就求大而全（架构师的完美主义不一定是好事），所以架构师要尽量写代码，做测试，否则纸上谈兵然后丢给开发团队是很不负责任的做法，容易造成产品不能满足最终用户需求。</p>
-<h5 id="er-zui-xiao-ke-yong-chan-pin"><a href="er-zui-xiao-ke-yong-chan-pin" class="header-anchor">"#"</a><a href="#二-最小可用产品" class="headerlink" title="二. 最小可用产品"></a>二. 最小可用产品</h5><p>最小可用产品（Minimum Viable Product， MVP）理念, 即迅速做出最小可用的产品，丢给客户试用，快速获取用户反馈，在此基础上不断进行产品架构的迭代和演化升级: </p>
+<h5><a href="#er-zui-xiao-ke-yong-chan-pin" class="header-anchor">#</a><span id="er-zui-xiao-ke-yong-chan-pin">二. 最小可用产品</span></h5><p>最小可用产品（Minimum Viable Product， MVP）理念, 即迅速做出最小可用的产品，丢给客户试用，快速获取用户反馈，在此基础上不断进行产品架构的迭代和演化升级: </p>
 <p><img src="/2017/06/10/20170610-note-architecture/115.jpg" alt=""></p>
 <p>如上图就是描述了架构师应该迅速做出最小可用产品，从而使得用户尽快试用产品并在此基础上快速更新升级，否则做出最终的产品无法满足客户需求而导致了成本和风险的提高。</p>
 <p><img src="/2017/06/10/20170610-note-architecture/116.jpg" alt=""></p>
@@ -414,9 +414,9 @@
 
 
 
-<h5 id="can-kao-zi-liao"><a href="can-kao-zi-liao" class="header-anchor">"#"</a><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h5><ul>
-<li><a href="http://itrevolution.com/the-three-ways-principles-underpinning-devops/" target="_blank" rel="external">THE THREE WAYS: THE PRINCIPLES UNDERPINNING DEVOPS</a></li>
-<li><a href="http://baike.baidu.com/link?url=PcIm9RTOWnAd0rqN7f5rrlbt9QmjWgPctJ5i4K5ObjPqD7KtOMIQRBiUVMZ5YpuQ_uymtAdsT-n-0hB4sCVyNK" target="_blank" rel="external">统一软件开发过程</a></li>
+<h5><a href="#can-kao-zi-liao" class="header-anchor">#</a><span id="can-kao-zi-liao">参考资料</span></h5><ul>
+<li><a href="http://itrevolution.com/the-three-ways-principles-underpinning-devops/" target="_blank" rel="noopener">THE THREE WAYS: THE PRINCIPLES UNDERPINNING DEVOPS</a></li>
+<li><a href="http://baike.baidu.com/link?url=PcIm9RTOWnAd0rqN7f5rrlbt9QmjWgPctJ5i4K5ObjPqD7KtOMIQRBiUVMZ5YpuQ_uymtAdsT-n-0hB4sCVyNK" target="_blank" rel="noopener">统一软件开发过程</a></li>
 </ul>
 
       
@@ -592,7 +592,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#guan-yu-jia-gou-zhuan"><span class="nav-text">&quot;#&quot;关于架构[转]</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#jia-gou-de-ding-yi-yu-li-jie"><span class="nav-text">&quot;#&quot;架构的定义与理解</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#jia-gou-de-die-dai-he-yan-hua-xing"><span class="nav-text">&quot;#&quot;架构的迭代和演化性</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#yi-rup-de-san-ge-te-dian"><span class="nav-text">&quot;#&quot;一. RUP的三个特点</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#er-zui-xiao-ke-yong-chan-pin"><span class="nav-text">&quot;#&quot;二. 最小可用产品</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#can-kao-zi-liao"><span class="nav-text">&quot;#&quot;参考资料</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">#关于架构[转]</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">#架构的定义与理解</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">#架构的迭代和演化性</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">#一. RUP的三个特点</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">#二. 最小可用产品</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">#参考资料</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>

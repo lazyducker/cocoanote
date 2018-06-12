@@ -365,17 +365,17 @@
       
 
       
-        <p>hexo提供了丰富的<a href="https://hexo.io/plugins/" target="_blank" rel="external">插件列表</a></p>
+        <p>hexo提供了丰富的<a href="https://hexo.io/plugins/" target="_blank" rel="noopener">插件列表</a></p>
 <p>好的博客文章应该具备清晰的层级结构，hexo默认没有不支持目录的生成（或者支持，我没有找到方法？，总之我找到一个新的通过集成hexo插件的方式）,今天主要是集成一下hexo主题对应的目录插件</p>
-<p>我们选择<a href="https://github.com/bubkoo/hexo-toc" target="_blank" rel="external">hexo-toc</a></p>
+<p>我们选择<a href="https://github.com/bubkoo/hexo-toc" target="_blank" rel="noopener">hexo-toc</a></p>
 <a id="more"></a>
-<h3 id="an-zhuang-hexo-toc"><a href="an-zhuang-hexo-toc" class="header-anchor">"#"</a><a href="#安装hexo-toc" class="headerlink" title="安装hexo-toc"></a>安装hexo-toc</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cnpm install hexo-toc --save</div></pre></td></tr></table></figure>
+<h3><a href="#an-zhuang-hexo-toc" class="header-anchor">#</a><span id="an-zhuang-hexo-toc">安装hexo-toc</span></h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-toc --save</span><br></pre></td></tr></table></figure>
 <p>安装完成后，在站点配置文件(_config.xml)文件中添加如下配置选项</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="attr">toc:</span></div><div class="line"><span class="attr">  maxdepth:</span> <span class="number">3</span></div><div class="line"><span class="attr">  class:</span> <span class="string">toc</span></div><div class="line"><span class="attr">  slugify:</span> <span class="string">transliteration</span></div><div class="line"><span class="attr">  anchor:</span></div><div class="line"><span class="attr">    position:</span> <span class="string">after</span></div><div class="line"><span class="attr">    symbol:</span> <span class="string">'#'</span></div><div class="line"><span class="attr">    style:</span> <span class="string">header-anchor</span></div></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">toc:</span></span><br><span class="line"><span class="attr">  maxdepth:</span> <span class="number">3</span></span><br><span class="line"><span class="attr">  class:</span> <span class="string">toc</span></span><br><span class="line"><span class="attr">  slugify:</span> <span class="string">transliteration</span></span><br><span class="line"><span class="attr">  anchor:</span></span><br><span class="line"><span class="attr">    position:</span> <span class="string">after</span></span><br><span class="line"><span class="attr">    symbol:</span> <span class="string">'#'</span></span><br><span class="line"><span class="attr">    style:</span> <span class="string">header-anchor</span></span><br></pre></td></tr></table></figure>
 <blockquote>
 <p><code>maxdepth</code>表示支持的层级深度，即 <code>symbol</code>指定的分隔符的长度</p>
 <p><code>class</code> 表示toc生成的样式Class</p>
-<p><code>slugify</code>: Choose which slugify function you want to use. Currently support <a href="https://github.com/jeremys/uslug" target="_blank" rel="external">uslug</a> (<em>Default</em>) and <a href="https://github.com/andyhu/node-transliteration" target="_blank" rel="external">transliteration</a>.(slugify功能目前不知道什么用途，暂时用的)</p>
+<p><code>slugify</code>: Choose which slugify function you want to use. Currently support <a href="https://github.com/jeremys/uslug" target="_blank" rel="noopener">uslug</a> (<em>Default</em>) and <a href="https://github.com/andyhu/node-transliteration" target="_blank" rel="noopener">transliteration</a>.(slugify功能目前不知道什么用途，暂时用的)</p>
 </blockquote>
 
       
@@ -553,7 +553,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#an-zhuang-hexo-toc"><span class="nav-text">&quot;#&quot;安装hexo-toc</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">#安装hexo-toc</span></a></li></ol></div>
             
 
           </div>

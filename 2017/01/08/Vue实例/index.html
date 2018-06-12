@@ -86,18 +86,18 @@
 
 
 
-<meta name="description" content="&quot;#&quot;Vue实例生命周期每个Vue实例被创建之前要经过一系列的初始化过程， 实例需要配置:  1.配置数据观测(Data Observer)2.编译模板3.挂载实例到DOM4.数据变化时更新DOM  在上述过程中，实例会调用生命周期的一些钩子方法,可以执行自定义逻辑：  created: 钩子方法, 在实例被创建之后被调用123456789var vm = new Vue(&amp;#123;data:">
+<meta name="description" content="#Vue实例生命周期每个Vue实例被创建之前要经过一系列的初始化过程， 实例需要配置:  1.配置数据观测(Data Observer)2.编译模板3.挂载实例到DOM4.数据变化时更新DOM  在上述过程中，实例会调用生命周期的一些钩子方法,可以执行自定义逻辑：  created: 钩子方法, 在实例被创建之后被调用123456789var vm = new Vue(&amp;#123;data: &amp;#">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Vue实例">
 <meta property="og:url" content="http://blog.todolist.win/2017/01/08/Vue实例/index.html">
 <meta property="og:site_name" content="2017 My Best Wishes">
-<meta property="og:description" content="&quot;#&quot;Vue实例生命周期每个Vue实例被创建之前要经过一系列的初始化过程， 实例需要配置:  1.配置数据观测(Data Observer)2.编译模板3.挂载实例到DOM4.数据变化时更新DOM  在上述过程中，实例会调用生命周期的一些钩子方法,可以执行自定义逻辑：  created: 钩子方法, 在实例被创建之后被调用123456789var vm = new Vue(&amp;#123;data:">
+<meta property="og:description" content="#Vue实例生命周期每个Vue实例被创建之前要经过一系列的初始化过程， 实例需要配置:  1.配置数据观测(Data Observer)2.编译模板3.挂载实例到DOM4.数据变化时更新DOM  在上述过程中，实例会调用生命周期的一些钩子方法,可以执行自定义逻辑：  created: 钩子方法, 在实例被创建之后被调用123456789var vm = new Vue(&amp;#123;data: &amp;#">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://blog.todolist.win/2017/01/08/Vue实例/lifecycle.png">
 <meta property="og:updated_time" content="2017-06-09T06:47:35.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue实例">
-<meta name="twitter:description" content="&quot;#&quot;Vue实例生命周期每个Vue实例被创建之前要经过一系列的初始化过程， 实例需要配置:  1.配置数据观测(Data Observer)2.编译模板3.挂载实例到DOM4.数据变化时更新DOM  在上述过程中，实例会调用生命周期的一些钩子方法,可以执行自定义逻辑：  created: 钩子方法, 在实例被创建之后被调用123456789var vm = new Vue(&amp;#123;data:">
+<meta name="twitter:description" content="#Vue实例生命周期每个Vue实例被创建之前要经过一系列的初始化过程， 实例需要配置:  1.配置数据观测(Data Observer)2.编译模板3.挂载实例到DOM4.数据变化时更新DOM  在上述过程中，实例会调用生命周期的一些钩子方法,可以执行自定义逻辑：  created: 钩子方法, 在实例被创建之后被调用123456789var vm = new Vue(&amp;#123;data: &amp;#">
 <meta name="twitter:image" content="http://blog.todolist.win/2017/01/08/Vue实例/lifecycle.png">
 
 
@@ -340,14 +340,14 @@
       
 
       
-        <h4 id="vue-shi-li-sheng-ming-zhou-qi"><a href="vue-shi-li-sheng-ming-zhou-qi" class="header-anchor">"#"</a><a href="#Vue实例生命周期" class="headerlink" title="Vue实例生命周期"></a>Vue实例生命周期</h4><p>每个Vue实例被创建之前要经过一系列的初始化过程，</p>
+        <h4><a href="#vue-shi-li-sheng-ming-zhou-qi" class="header-anchor">#</a><span id="vue-shi-li-sheng-ming-zhou-qi">Vue实例生命周期</span></h4><p>每个Vue实例被创建之前要经过一系列的初始化过程，</p>
 <p>实例需要配置:</p>
 <blockquote>
 <p>1.配置数据观测(Data Observer)<br>2.编译模板<br>3.挂载实例到DOM<br>4.数据变化时更新DOM</p>
 </blockquote>
 <p>在上述过程中，实例会调用生命周期的一些钩子方法,可以执行自定义逻辑：</p>
 <blockquote>
-<p>created: 钩子方法, 在实例被创建之后被调用<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</div><div class="line"><span class="attr">data</span>: &#123;</div><div class="line"><span class="attr">a</span>: <span class="number">1</span></div><div class="line">&#125;,</div><div class="line"><span class="attr">created</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line"><span class="comment">//`this` 指向vm实例</span></div><div class="line"><span class="built_in">console</span>.log(<span class="string">'a is: '</span> + <span class="keyword">this</span>.a);</div><div class="line">&#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<p>created: 钩子方法, 在实例被创建之后被调用<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">data: &#123;</span><br><span class="line">a: <span class="number">1</span></span><br><span class="line">&#125;,</span><br><span class="line">created: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="comment">//`this` 指向vm实例</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'a is: '</span> + <span class="keyword">this</span>.a);</span><br><span class="line">&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <p>还有其他钩子，例如 <code>mounted</code>, <code>updated</code>, <code>destroyed</code>, 这些钩子可以再实例生命周期的不同阶段调用，<code>this</code>关键字指向的是vue的实例.<br>vue中无控制器的概念，需要自定义逻辑，可以分别在这些不同的钩子方法中实现</p>
 <p><img src="/2017/01/08/Vue实例/lifecycle.png" alt="生命周期"></p>
@@ -515,7 +515,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#vue-shi-li-sheng-ming-zhou-qi"><span class="nav-text">&quot;#&quot;Vue实例生命周期</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">#Vue实例生命周期</span></a></li></ol></div>
             
 
           </div>
